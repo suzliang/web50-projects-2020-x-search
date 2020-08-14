@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <style>
+            .nav-link {
+                padding-top: 20px;
+                font-family: Arial;
+                font-size: 13px !important;
+            }
+            .form-control {
+                display: inline-block !important;
+            }
+            h4 {
+                font-family: Arial;
+                color: #df0000;
+                padding: 15px 45px;
+            }
+            .col-sm-6 {
+                font-family: Arial;
+                font-size: 13px;
+                font-weight: bold;
+                color: #383737;
+                padding-top: 25px;
+                padding-left: 130px;
+                padding-bottom: 5px;
+            }
+            h6 {
+                font-family: Arial;
+                color: #383737;
+                padding-top: 13px;
+                padding-left: 45px;
+                padding-bottom: 5px;
+            }
+            label {
+                font-family: Arial;
+                font-size: 13px;
+                color: #383737;
+                padding-left: 45px;
+                padding-top: 13px;
+            }
+            p {
+                font-family: Arial;
+                font-size: 11px;
+                color: #383737;
+                padding-top: 11px;
+            }
+            span {
+                font-family: 'courier new'
+            }
+            hr {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                border: 0;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
+            }
+            input[type="text"] {
+                font-family: Arial;
+            }
+            input[type="text"]:focus {
+                outline: none;
+                box-shadow: 0px 0px 5px #D0D0D0;
+            }
+            input[type="text"]:focus:hover {
+                outline: none;
+                box-shadow: 0px 0px 5px #6150ff;
+            }
+            input[type="submit"] {
+                margin: auto;
+                width: 136px;
+                border: 0px;
+                background: #4974ff;
+                padding: 8px 18px;
+                font-family: Arial;
+                font-size: 12px;
+                color: 	#ffffff;
+                font-weight: bolder;
+                text-align: right;
+            }
+            input[type="submit"]:hover {
+                background: #295bff;
+                border: 1px solid #494949;
+                padding: 5px 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-light justify-content-end">
+            <a class="navbar-brand mr-auto" href="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/552px-Google_2015_logo.svg.png" height="31">
+            </a>
+            <div class="navbar-nav">
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images.html">Image Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="advanced.html">Advanced Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <h4>Advanced Search</h4>
+        <hr />
+        <div class="row">
+            <div class="col-sm-2">
+                <h6>Find pages with...</h6>
+            </div>
+            <div class="col-sm-4"></div>
+            <div class="col-sm-6">
+                To do this in the search box
+            </div>
+        </div>
+
+        <form action="https://www.google.com/search">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="all">all these words:</label>
+                    <label for="exact">this exact word or phrase:</label>
+                    <label for="any">any of these words:</label>
+                    <label for="none">none of these words:</label>
+                </div>
+                <div class="col-sm-5">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm"  id="all" name="as_q">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm" style="width: 550px;" id="exact" name="as_epq">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm" style="width: 550px;" id="any" name="as_oq">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm" style="width: 550px;" id="none" name="as_eq">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <p>Type the important words:  <span>tricolor rat terrier</span></p>
+                    <p>Put exact words in quotes:  <span>"rat terrier"</span></p>
+                    <p>Type OR between all the words you want: <span>miniature OR standard</span></p>
+                    <p>Put a minus sign just before words you don't want:<span>-rodent, -"Jack Russell"</span></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-5" style="text-align:right;">
+                    <input type="submit" class="form-control input-sm" value="Advanced Search">
+                </div>
+                <div class="col-sm-5"></div>
+            </div>
+        </form>
+    </body>
+</html>

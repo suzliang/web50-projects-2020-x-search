@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Search</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <style>
+            .nav-item {
+                padding-top: 8px;
+                font-family: Arial;
+                font-size: 13px !important;
+            }
+            .center {
+                display: block;
+                padding-top: 62px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 27%;
+            }
+            input[type="text"] {
+                margin: auto;
+            }
+            input[type="text"]:focus {
+                outline: none;
+                box-shadow: 0px 0px 5px #D0D0D0;
+            }
+            input[type="text"]:hover {
+                border: 1px solid #D0D0D0;
+            }
+            input[type="text"]:focus:hover {
+                outline: none;
+                box-shadow: 0px 0px 5px #D0D0D0;
+            }
+            input[type="submit"] {
+                margin: auto;
+                width: 85px;
+                border: 0px;
+                background: #F3F3F3;
+                padding: 8px 18px;
+                font-family: Arial;
+                font-size: 14px;
+                color: 	#585858;
+            }
+            input[type="submit"]:hover {
+                border: 1px solid #C0C0C0;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm justify-content-end">
+            <div class="collapse navbar-collapse flex-grow-0">
+                <ul class="navbar-nav text-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="images.html">Image Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="advanced.html">Advanced Search</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <img src="https://sites.google.com/site/thisisjustatest2294/_/rsrc/1468742544208/project-resources/image-search/google-image-search/Screen%20Shot%202015-11-28%20at%201.14.27%20PM.png" alt="Google Images" width="300" class="center">
+        <form class="w3-containter" action="https://www.google.com/search">
+            <input type="text" class="w3-input w3-border w3-round-xxlarge" style="width: 550px;" name="q" />
+            <input type="hidden" name="tbm" value="isch">
+            <br>
+            <div class="d-flex justify-content-center">
+                <input type="submit" class="w3-input w3-border w3-round" value="Search">
+            </div>
+        </form>
+    </body>
+</html>
